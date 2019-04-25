@@ -1,0 +1,18 @@
+#logo{
+  height: 5%;
+  width: 5%;
+
+}
+
+.log-in-form {
+  border: 1px solid #cacaca;
+  padding: 5rem;
+  border-radius: 0;
+}
+
+#main{
+  padding: 3rem;
+}
+#mail{
+  padding-top: 2rem;
+}
