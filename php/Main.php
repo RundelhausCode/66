@@ -1,16 +1,14 @@
 <?php
 require 'rb.php';
-R::setup('mysql:host=localhost;dbname=entest', 'root', 'Rootlog');
-
-$opts = getopt('',['add:','list']);
-
-if ( isset( $opts['add'] ) ) {
+R::setup('mysql:host=localhost;dbname=entest', 'root', 'rootlog');
     $w = R::dispense( 'whisky' );
-    $w->name = $opts['add'];
+    $w->name = 'Bowmore';
     $id = R::store( $w );
-    die( "OK.\n" );
-}
-if ( isset( $opts['list'] ) ) {
+
+    class insert_mail{
+        
+    }
+/*if ( isset( $opts['list'] ) ) {
     $bottles = R::find( 'whisky' );
     if ( !count( $bottles ) )
         die( "The cellar is empty!\n" );
@@ -18,6 +16,6 @@ if ( isset( $opts['list'] ) ) {
         echo "* #{$b->id}: {$b->name}\n";
     }
     exit;
-}
+}*/
 
 ?>
